@@ -1,0 +1,94 @@
+algoritmo "Ativ-apren_array01_Pedro Henrique Soares Silva"
+      //começo do algoritmo
+var
+
+MD1, MD2, MD3, MD4, MD5, MD6, MD7, MD8: real   //Define o tipo de dado, neste caso "real" para as variáveis nesta linha
+
+SOMA, MEDIA: real    //Define o tipo de dado, neste caso "real" para as variáveis nesta linha
+
+inicio
+
+SOMA <- 0
+
+escreval( " Digite as médias de 8 alunos, uma por vez: " )
+
+leia(MD1, MD2, MD3, MD4, MD5, MD6, MD7, MD8)  //Nesta linha o usuario define o valor para as oito variáveis uma por vez(MD1..MD8)
+
+SOMA <- MD1 + MD2 + MD3 + MD4 + MD5 + MD6 + MD7 + MD8  //Define o valor da variável "soma" considerando os valores dados anteriormente.
+
+MEDIA <- SOMA / 8 //Define o valor da variável "media" considerando os valores dados anteriormente.
+
+escreva( "A média da média dos 8 alunos é: ",MEDIA)
+
+fimalgoritmo //fim do algoritmo
+
+
+
+
+
+
+
+algoritmo "Ativ-apren_array02_Pedro Henrique Soares Silva"
+      //começo do algoritmo
+var
+
+MD: vetor[1..8] de real   //Define o tipo de dado, neste caso "vetor do tipo real" para as variáveis nesta linha
+SOMA, MEDIA: real        //Define o tipo de dado, neste caso "real" para as variáveis nesta linha
+I:inteiro               //Define o tipo de dado, neste caso "inteiro" para a variável nesta linha
+inicio
+
+SOMA <- 0
+
+
+escreval( " Digite as médias de 8 alunos, uma por vez: " )
+  para I de 1 ate 8 passo 1 faca        //define o tamanho do indice para fazer o vetor funcionar
+leia(MD[I])                            //Nesta linha o usuario define o valor para as oito variáveis uma por vez(MD1..MD8)
+   SOMA <- SOMA + MD[I]               //Define o valor da variável "soma" considerando os valores dados anteriormente.
+ fimpara
+
+MEDIA <- SOMA / 8                   //Define o valor da variável "media" considerando os valores dados anteriormente.
+escreva( "A média da média dos 8 alunos é: ",MEDIA)
+
+fimalgoritmo   //fim do algoritmo
+
+
+
+
+
+
+
+
+
+algoritmo "Ativ-apren_array03_Pedro Henrique Soares Silva"
+
+var
+
+nome: vetor[0..19] de caractere   //Define o tipo de dado, neste caso "vetor do tipo caractere" para a variável nesta linha
+I,j,t,x,y:inteiro               //Define o tipo de dado, neste caso "inteiro" para a variável nesta linha
+inicio
+
+escreval( " Digite o nome dos 20 alunos, um por vez: " )
+ para i de 3 ate 1 passo -1 faça
+      compr(nome[i])<-i
+      fimpara
+ para I de 1 ate 3 passo 1 faca
+ para j de I ate I faça       //define o tamanho do indice para fazer o vetor funcionar
+leia(nome[I])
+                    //Nesta linha o usuario digita os nomes para as 20 variáveis uma por vez(nome1..nome20)
+  X<-compr(nome[i])
+  Y<-compr(nome[i+1])
+     se (compr(nome[i])) > (compr(nome[i*1])) entao
+ t<-compr(nome[i*1])
+  compr(nome[i*1])<-compr(nome[i])
+ compr(nome[i])<-t
+ escreval("",y)
+  fimse
+ fimpara
+ fimpara
+  para I de 1 ate 3 passo 1 faca
+     escreval( "O nome dos 20 alunos é: ",nome[i])
+
+
+
+ fimpara
+fimalgoritmo   //fim do algoritmo

@@ -1,0 +1,153 @@
+Algoritmo "Ativ_fix_EDH_A_Gustavo_Albuquerque_e_Pedro_Henrique"
+tipo
+
+DADOS = registro
+
+CODIGO : inteiro
+
+CARGO : caractere
+
+SALARIO : real
+
+fimregistro
+
+var
+
+TABELA: vetor [1..17] de DADOS
+
+i, codigo: inteiro
+
+resp: caractere
+
+acha: logico
+
+inicio
+ escreval("Esse algoritmo apresenta uma tabela com um código,cargo e salário.")
+ escreval ("Contendo 17 variaveis para cada linha dos três")
+ //Momento em que o usuário começa a atribuir o valor as variáveis
+para i de 1 até 17 passo 1 faça
+
+TABELA[i].CODIGO <- i
+
+escreva( "Código ....:" , TABELA[i].CODIGO)
+
+leia(TABELA[i].CODIGO)
+
+escreva( "Cargo: ....:" , TABELA[i].CARGO)
+leia(TABELA[i].CARGO)
+
+escreva( "Salário: ..:" , TABELA[i].SALARIO)
+
+leia(TABELA[i].SALARIO)
+
+fimpara
+  resp<-"sim"
+ enquanto (resp = "sim" ) faca
+
+escreva( "Qual o código? digite um número de 01 a 17: " )
+
+leia(i)
+
+i <- 1
+
+acha <- falso
+
+enquanto (i <= 17) e (acha = falso) faça
+
+se(codigo=tabela[i].codigo)entao
+
+acha <- verdadeiro
+
+senão
+
+i <- i + 1
+
+fimse
+
+fimenquanto
+
+se (acha = verdadeiro) entao
+
+escreva( "Cargo: " , TABELA[i].CARGO)
+
+escreva( "Salário: " , TABELA[i].SALARIO)
+
+senao
+
+escreva( "Cargo INEXISTENTE").
+
+fimse
+
+escreva( "Deseja continuar a pesquisa?" )
+
+leia(resp)
+
+fimenquanto
+
+fimalgoritmo
+
+
+
+
+
+
+
+Algoritmo "Ativ_fix_EDH_B_Gustavo_Albuquerque_e_Pedro_Henrique"
+tipo
+
+DADOS = registro
+
+NOMES : caractere
+
+AB,BC,CD,DF,T : real
+
+fimregistro
+
+var
+
+bimestre: vetor [1..8] de DADOS
+i,j: inteiro
+X:caracter
+Y,Z,W,M:real
+inicio
+ escreval("leitura das 4 notas bimestrais de 8 alunos,")
+
+ escreval ("apresentando no final os dados dos alunos classificados por nome: ")
+ escreval("Digite os nomes e as notas dos alunos")
+ //Momento em que o usuário começa a atribuir o valor as variáveis
+para i de 1 até 8 passo 1 faça
+
+
+escreva("Nome do aluno->",[i]," ",BIMESTRE[i].NOMES)
+leia(BIMESTRE[i].NOMES)
+
+escreva( "bimestre 1-> " , BIMESTRE[i].AB)
+leia(BIMESTRE[i].AB)
+
+escreva( "bimestre 2-> " , BIMESTRE[i].BC)
+leia(BIMESTRE[i].BC)
+
+escreva( "bimestre 3-> " , BIMESTRE[i].CD)
+leia(BIMESTRE[i].CD)
+
+escreva("bimestre 4-> " , BIMESTRE[i].DF)
+leia(BIMESTRE[i].DF)
+
+
+fimpara
+ para i de 1 ate 7 faca
+ para j de i+1 ate 8 faca
+ se BIMESTRE[i].NOMES > BIMESTRE[j].NOMES entao
+            X<-BIMESTRE[i].nomes
+            BIMESTRE[i].nomes<-BIMESTRE[j].nomes
+            BIMESTRE[j].nomes<-X
+         fimse
+      fimpara
+   fimpara
+
+  para i de 1 ate 8 passo 1 faca
+  escreva("Os nomes ordenados em ordem: ",BIMESTRE[i].nomes)
+
+  escreval("____________________________________")
+  fimpara
+fimalgoritmo

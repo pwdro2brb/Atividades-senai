@@ -1,0 +1,101 @@
+Algoritmo "L06AFIX_Pedro Henrique Soares Silva"
+
+Var
+X,R:inteiro
+CONT:inteiro
+
+Inicio
+escreval("O quadrado dos números inteiros de 15 a 100.")
+para CONT de 15 ate 100 passo 1 faca  //condição para que X seja digitado 5 vezes iguais ou diferentes
+ R<-cont*cont
+ escreval("Um dos resultados é:",R)
+ fimpara //finalização para a condição "para" na linha 9.
+Fimalgoritmo
+
+
+
+Algoritmo "L06BFIX_Pedro Henrique Soares Silva"
+
+Var
+X,R:inteiro
+CONT:inteiro
+
+Inicio
+escreval("Os resultados de uma tabuada de multiplicar (de 1 até 10) de um número qualquer.")
+escreval("Escolha o valor desse número:")
+leia(X)
+para CONT de 1 ate 10 passo 1 faca  //condição para que X seja digitado 5 vezes iguais ou diferentes
+ R<-X*cont
+ escreval("Um dos resultados da tabuada é:",R)
+ fimpara //finalização para a condição "para" na linha 9.
+Fimalgoritmo
+
+
+
+Algoritmo "L06CFIX_Pedro Henrique Soares Silva"
+
+Var
+X,R:inteiro
+CONT:inteiro
+
+Inicio
+escreval("Esse programa vai apresentar o total da soma obtida dos cem primeiros números inteiros.")
+para CONT de 1 ate 100 passo 1 faca  //condição para que X seja digitado 5 vezes iguais ou diferentes
+ R<-cont+R
+ fimpara //finalização para a condição "para" na linha 9.
+ escreval("O resultado da somatoria dos números de 1 a 100 é:",R)
+Fimalgoritmo
+
+
+
+Algoritmo "L06DFIX_Pedro Henrique Soares Silva"
+
+Var
+X,R:inteiro
+CONT:inteiro
+
+Inicio
+escreval("Esse programa apresenta no final o somatório dos valores pares existentes na faixa de 1 até 500.")
+para CONT de 2 ate 500 passo 2 faca  //condição para que X seja digitado 5 vezes iguais ou diferentes
+ R<-cont+R
+ fimpara //finalização para a condição "para" na linha 9.
+ escreval("O resultado da somatoria dos números pares de 1 a 500 é:",R)
+Fimalgoritmo
+
+
+
+
+Algoritmo "L06EFIX_Pedro Henrique Soares Silva"
+
+Var
+X,R:inteiro
+CONTe:inteiro
+
+Inicio
+escreval("Esse programa apresenta no final o somatório dos valores pares existentes na faixa de 1 até 500.")
+ para CONTE de 1 ate 18 passo 2 faca  //condição para que X seja digitado 5 vezes iguais ou diferentes
+ R<-conte+2
+ se(conte<>1)ou(conte<>3)ou(conte<>5)ou(conte<>7)ou(conte<>9)ou(conte<>11)ou(conte<>13)ou(conte<>15)ou(conte<>17)ou(conte<>19)e(conte=0)entao
+  escreval("Os numeros impares de 1 a 20 são: ",R)
+
+  senao
+ fimse
+ fimpara    //finalização para a condição "para" na linha 9.
+Fimalgoritmo
+
+
+
+Algoritmo "L06FFIX_Pedro Henrique Soares Silva"
+
+Var
+X,R:inteiro
+CONTe:inteiro
+
+Inicio
+escreval("Esse programa apresenta todos os números divisíveis por 4 e menores que 200.")
+ para CONTE de 4 ate 200 passo 4 faÇa  //condição para que X seja digitado 5 vezes iguais ou diferentes
+ R<-conte
+  escreval("Os numeros divisiveis por 4 de 4 a 200 são: ",R)
+ fimpara    //finalização para a condição "para" na linha 9.
+Fimalgoritmo
+
